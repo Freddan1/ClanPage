@@ -1,0 +1,19 @@
+.ul {
+    display: flex;
+    background-color: #666;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    height: 50px;
+    gap: 6rem;
+}
+
+.dicon {
+    font-size: 3rem;
+    text-decoration: none;
+    color:black;
+}
+
+.dicon:hover {
+    color: orangered;
+}
