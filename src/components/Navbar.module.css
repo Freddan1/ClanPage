@@ -1,25 +1,30 @@
 
 .ul{
-    background-color: #666;
+    display: flex;
+    
     list-style-type: none;
     margin-bottom: 10px;
     padding: 0;
     overflow: hidden;
     font-size: 30px;
     height: 60px;
+    justify-content: space-evenly;
 }
-.li{
-    float: left;
-}
+
 
 li a {
     display: block;
-    color: white;
+    color: rgba(0, 0, 0, 0.557);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 li a:hover{
-    background-color: #111;
+    background-color: #e6a42adc;
+     
+}
+
+.img{
+    border-radius: 50px;
 }
