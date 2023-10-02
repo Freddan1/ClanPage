@@ -1,6 +1,6 @@
 .ul {
     display: flex;
-    background-color: #666;
+    
     justify-content: center;
     text-align: center;
     padding: 10px;
@@ -12,6 +12,9 @@
     font-size: 3rem;
     text-decoration: none;
     color:black;
+    overflow: hidden;
+  position: relative;
+  display: inline-block;
 }
 
 .dicon:hover {
