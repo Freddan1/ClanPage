@@ -4,6 +4,6 @@ import BannerStyles from './Banner.module.css'
 
 export default function Banner() {
   return (
-    <img src={CoverImage} alt="pic" className={BannerStyles} />
+    <img src={CoverImage} alt="pic" className={BannerStyles.img} />
   )
 }

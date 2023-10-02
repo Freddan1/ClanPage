@@ -18,16 +18,36 @@ export default function Members() {
                 </div>
             </div>
             <div className={membersStyle.box1}>
-
+            <div className={membersStyle.content}>
+                    <div className={membersStyle.pic}>
+                        <img src={TerroristImage} alt="pic"  />
+                    </div>
+                    <div className={membersStyle.profileTitle}>Freddan</div>
+                </div>
             </div>
             <div className={membersStyle.box1}>
-
+            <div className={membersStyle.content}>
+                    <div className={membersStyle.pic}>
+                        <img src={TerroristImage} alt="pic"  />
+                    </div>
+                    <div className={membersStyle.profileTitle}>Äpplet</div>
+                </div>
             </div>
             <div className={membersStyle.box1}>
-
+                <div className={membersStyle.content}>
+                        <div className={membersStyle.pic}>
+                            <img src={TerroristImage} alt="pic"  />
+                        </div>
+                        <div className={membersStyle.profileTitle}>Af</div>
+                    </div>
             </div>
             <div className={membersStyle.box1}>
-
+            <div className={membersStyle.content}>
+                    <div className={membersStyle.pic}>
+                        <img src={TerroristImage} alt="pic"  />
+                    </div>
+                    <div className={membersStyle.profileTitle}>Unknown</div>
+                </div>
             </div>
         </div>
     </>
