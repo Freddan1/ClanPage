@@ -12,7 +12,6 @@
     display: flex;
     width: 40%;
     height: 70%;
-    border: 1px solid black;
     justify-content: center;
     text-align: center;
 }
@@ -24,4 +23,32 @@
     font-size: 60px;
     color: white;
 
+}
+
+.forms{
+    width: 70%;
+    height: 70%;
+}
+
+.input{
+    width: 100%;
+    height: 40px;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(47, 47, 47);
+    padding: 6px;
+    color: #fff;
+
+}
+
+.textarea{
+    color: white;
+    width: 100%;
+    height: 60%;
+    border: none;
+    margin-top: 35px;
+    background-color: rgb(47, 47, 47);
+    border-radius: 2px;
+    padding: 6px;
 }
