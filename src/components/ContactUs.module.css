@@ -8,47 +8,104 @@
     background-color: rgb(184, 120, 2);
 }
 
-.container2{
-    display: flex;
-    width: 40%;
-    height: 70%;
-    justify-content: center;
+.formContainer{
+    max-width: 800px;
+    background-color: white;
+    width: 800px;
+    padding: 25px 40px 10px 40px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1)
+}
+.formContainer .text{
+    padding: 20px;
     text-align: center;
+    font-size: 41px;
+    font-weight: 600;
+    background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-.title{
+
+.formContainer form{
+    padding: 30px 0 0 0;
+}
+
+.formContainer form .formRow{
     display: flex;
-    justify-content: center;
-    margin: 50px 50PX;
-    width: 100%;
-    font-size: 60px;
-    color: white;
-
+    margin: 32px 0;
 }
 
-.forms{
-    width: 70%;
-    height: 70%;
-}
-
-.input{
+form .formRow .inputData{
     width: 100%;
     height: 40px;
-    margin-top: 2rem;
-    border: none;
-    border-radius: 2px;
-    background-color: rgb(47, 47, 47);
-    padding: 6px;
-    color: #fff;
-
+    margin: 0 20px;
+    position: relative;
 }
 
-.textarea{
-    color: white;
+form .formRow .inputDataTextarea{
+    height: 70px;
+}
+
+.inputDataTextarea textarea{
+    resize: none;
+    padding: 10px;
+}
+
+.inputData input:focus ~ label, .inputDataTextarea textarea:focus ~ label,
+.inputData input:valid ~ label, .inputDataTextarea textarea:valid ~ label{
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: rgb(184, 120, 2);
+}
+.inputData input, .inputDataTextarea textarea{
     width: 100%;
-    height: 60%;
+    height: 40px;
+    margin: 10 20px;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
     border: none;
-    margin-top: 35px;
-    background-color: rgb(47, 47, 47);
-    border-radius: 2px;
-    padding: 6px;
+    font-size: 17px;
+    border-bottom: 2px solid rgba(0,0,0, 0.12);
+
 }
+
+.inputData label{
+    position: absolute;
+    pointer-events: none;
+    bottom: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.inputDataTextarea label{
+    width: 100%;
+    bottom: 40px;
+    background-color: #fff;
+}
+
+.inputData .underline{
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+}
+.inputData .underline:before{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: rgb(184, 120, 2);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.inputData input:focus ~ .underline:before,
+.inputData input:valid ~ .underline:before,
+.inputDataTextarea textarea:focus ~ .underline:before,
+.inputDataTextarea textarea:valid ~ .underline:before{
+  transform: scale(1);
+}
+
+

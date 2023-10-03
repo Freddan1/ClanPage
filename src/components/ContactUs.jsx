@@ -1,21 +1,45 @@
 import React from 'react'
 import ContactStyles from './ContactUs.module.css'
-import SubmitButton from './SubmitButton'
 
 export default function ContactUs() {
   return (
     <>
     <div className={ContactStyles.container}>
-    <div className={ContactStyles.title}>Contact us for tryout</div>
-        <div className={ContactStyles.container2}>
-          <div className={ContactStyles.forms}>
-            <input type="text" placeholder='Email' className={ContactStyles.input} />
-            <input type="text" placeholder='Subject' className={ContactStyles.input} />
-            <textarea name="Message" className={ContactStyles.textarea} placeholder='Message'></textarea>
-            <SubmitButton/>
+      <div className={ContactStyles.formContainer}>
+        <div className={ContactStyles.text}>
+          Contact us for tryout
           </div>
-        </div>
-    </div>
+            <form action="#">
+              <div className={ContactStyles.formRow}>
+                <div className={ContactStyles.inputData}>
+                  <input type="text" required/>
+                  <div className={ContactStyles.underline}></div>
+                  <label htmlFor="">First Name</label>
+                </div>
+                <div className={ContactStyles.inputData}>
+                  <input type="text" required/>
+                  <div className={ContactStyles.underline}></div>
+                  <label htmlFor="">Last Name</label>
+                </div>
+              </div>
+              <div className={ContactStyles.formRow}>
+                <div className={ContactStyles.inputData}>
+                  <input type="text" required/>
+                  <div className={ContactStyles.underline}></div>
+                  <label htmlFor="">Email Adress</label>
+                </div>
+              </div>
+              <div className={ContactStyles.formRow}>
+                <div className={ContactStyles.inputDataTextarea}>
+                  <textarea cols="80" rows="8" required></textarea>
+                  <div className={ContactStyles.underline}></div>
+                  <label htmlFor=""> Write your message</label>
+                  <br />
+                </div>
+              </div>
+            </form>
+          </div>
+      </div>
     </>
   )
 }
