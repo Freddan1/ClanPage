@@ -6,9 +6,7 @@ export default function ContactUs() {
     <>
     <div className={ContactStyles.container}>
       <div className={ContactStyles.formContainer}>
-        <div className={ContactStyles.text}>
-          Contact us for tryout
-          </div>
+        <div className={ContactStyles.text}>Contact us for tryout</div>
             <form action="#">
               <div className={ContactStyles.formRow}>
                 <div className={ContactStyles.inputData}>
@@ -30,8 +28,9 @@ export default function ContactUs() {
                 </div>
               </div>
               <div className={ContactStyles.formRow}>
-                <div className={ContactStyles.inputDataTextarea}>
-                  <textarea cols="80" rows="8" required></textarea>
+                <div className={ContactStyles.inputData}>
+                  <textarea className={ContactStyles.textArea} cols="80" rows="8" required></textarea>
+                  <br />
                   <div className={ContactStyles.underline}></div>
                   <label htmlFor=""> Write your message</label>
                   <br />
