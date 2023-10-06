@@ -2,11 +2,11 @@ import React from 'react'
 import ContactStyles from './ContactUs.module.css'
 import SubmitButton from './SubmitButton'
 
-export default function ContactUs() {
+export default function ContactUs({id}) {
   return (
     <>
     <div className={ContactStyles.container}>
-      <div className={ContactStyles.formContainer}>
+      <div className={ContactStyles.formContainer} id={id}>
         <div className={ContactStyles.text}>Contact us for tryout</div>
             <form action="#">
               <div className={ContactStyles.formRow}>

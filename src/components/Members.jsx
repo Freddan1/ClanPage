@@ -6,7 +6,7 @@ export default function Members() {
   return (
     <>
       <div className={membersStyle.title}>Members</div>
-      <div className={membersStyle.container}>
+      <div id="members" className={membersStyle.container}>
         <div className={membersStyle.box1}>
           <div className={membersStyle.content}>
             <div className={membersStyle.pic}>

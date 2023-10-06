@@ -1,3 +1,4 @@
+import React from "react";
 import './App.css'
 import Banner from './components/Banner'
 import ContactUs from './components/ContactUs'
@@ -6,13 +7,24 @@ import Members from './components/Members'
 import Navbar from './components/Navbar'
 
 function App() {
+  const handleScroll = (sectionId) => {
+    console.log("Scrolling to section:", sectionId);
+    const element = document.getElementById(sectionId);
+
+    if (element) {
+      console.log("Element found:", element);
+      element.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  };
 
   return (
     <>
-     <Navbar/>
-     <Banner/>
-     <Members/>
-     <ContactUs/>
+     <Navbar handleScroll={handleScroll}/>
+     <Banner id="home"/>
+     <Members id="members"/>
+     <ContactUs id="contact"/>
      <Footer/>
     </>
   )
