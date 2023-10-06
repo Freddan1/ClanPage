@@ -13,7 +13,7 @@
     background-color: white;
     width: 800px;
     padding: 25px 40px 10px 40px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1)
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.3)
 }
 .formContainer .text{
     padding: 20px;
