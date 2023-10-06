@@ -56,7 +56,7 @@ export default function Members() {
               <img src={TerroristImage} alt="pic" />
             </div>
             <div className={membersStyle.profileTitle}>
-              Äpplet
+              Applet
               <div className={membersStyle.textContent}>
                 <p className={membersStyle.pTag}>
                   Äpplet, the team's resident clown, adds a delightful and
