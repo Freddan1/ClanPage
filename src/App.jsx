@@ -25,7 +25,7 @@ function App() {
      <Banner id="home"/>
      <Members id="members"/>
      <ContactUs id="contact"/>
-     <BangerContent />
+     <BangerContent id="bangerContent"/>
      <Footer/>
     </>
   )

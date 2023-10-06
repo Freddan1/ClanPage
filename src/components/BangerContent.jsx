@@ -3,7 +3,7 @@ import BangerContentStyles from "./BangerContent.module.css";
 
 function BangerContent() {
   return (
-    <div className={BangerContentStyles.wrapper}>
+    <div className={BangerContentStyles.wrapper} id="bangerContent">
       <div className={BangerContentStyles.heading}>
         Banger Content
         <br />
