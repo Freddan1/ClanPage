@@ -12,14 +12,16 @@
     height: 40rem;
     padding: 20px;
     gap: 10px;
+   
 }
 
 .box1{
     display: flex;
     width: 20%;
-    height: 80%;
+    height: 90%;
     justify-content: center;
-    text-align: center;
+    
+    /* text-align: center; */
     background-color: rgb(47, 47, 47);
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.60) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -46,15 +48,17 @@
 .profileTitle{
     color: #e6a42adc;
     font-size: large;
+    text-align: center;
 }
 .pTag{
     font-size: medium;
     line-height: 1.2rem;
     color: white;
+    text-align: left;
 }
 .textContent{
     margin: 5%;
-    text-align: center;
+    
     display: flex;
     justify-content: center;
 }
