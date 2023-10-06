@@ -126,3 +126,18 @@ form .formRow .inputData .textArea{
 .textArea:valid ~ .underline1:before{
   transform: scale(1);
 }
+
+@media (max-width: 768px) {
+    .formContainer .text{
+      font-size: 30px;
+    }
+    .formContainer form{
+      padding: 10px 0 0 0;
+    }
+    .formContainer form .formRow{
+      display: block;
+    }
+    form .formRow .inputData{
+      margin: 35px 0!important;
+    }
+  }

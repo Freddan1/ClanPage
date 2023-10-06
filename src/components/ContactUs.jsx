@@ -1,5 +1,6 @@
 import React from 'react'
 import ContactStyles from './ContactUs.module.css'
+import SubmitButton from './SubmitButton'
 
 export default function ContactUs() {
   return (
@@ -36,6 +37,7 @@ export default function ContactUs() {
                   <br />
                 </div>
               </div>
+                <SubmitButton/>
             </form>
           </div>
       </div>
