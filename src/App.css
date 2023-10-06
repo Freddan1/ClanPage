@@ -6,6 +6,11 @@
   font-family: 'Montserrat';
 }
 
+html {
+  scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
+}
+
 *{
   margin: 0;
   padding: 0;

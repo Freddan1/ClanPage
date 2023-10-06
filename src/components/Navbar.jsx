@@ -3,7 +3,10 @@ import navBarStyles from "./navbar.module.css";
 import logo from "../assets/slan.png";
 
 export default function Navbar({handleScroll}) {
-
+  const handleClick = (sectionId, event) => {
+    event.preventDefault();
+    handleScroll(sectionId);
+  };
   
   return (
     <>
@@ -12,17 +15,17 @@ export default function Navbar({handleScroll}) {
           <img src={logo} alt="Logo" className={navBarStyles.img} />
       
         <li className={navBarStyles.li}>
-        <a href="#" onClick={() => handleScroll("home")}>
+        <a href="#" onClick={(event) => handleClick("home", event)}>
             Home
           </a>
         </li>
         <li className={navBarStyles.li}>
-        <a href="#" onClick={() => handleScroll("members")}>
+        <a href="#" onClick={(event) => handleClick("members", event)}>
             Members
           </a>
         </li>
         <li className={navBarStyles.li}>
-        <a href="#" onClick={() => handleScroll("contact")}>
+        <a href="#" onClick={(event) => handleClick("contact", event)}>
             Contact
           </a>
         </li>
