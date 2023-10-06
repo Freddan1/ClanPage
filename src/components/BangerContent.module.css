@@ -1,0 +1,25 @@
+.wrapper{
+    margin: 2rem 4rem;
+    justify-content: center;
+    
+}
+.heading{
+  justify-content: center;
+  display: flex;
+  margin-bottom: 2rem;
+  font-size: 60px;
+}
+.videoList{
+    
+    display: grid;
+    grid-template-columns: repeat(12,minmax(0,1fr));
+    gap: 0.5rem;
+    
+}
+.videoBox{
+    min-height: 300px;
+    grid-column : span 4 ;
+    
+    border: 1px solid black;
+
+}

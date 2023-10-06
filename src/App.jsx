@@ -1,5 +1,6 @@
 import React from "react";
 import './App.css'
+import BangerContent from './components/BangerContent'
 import Banner from './components/Banner'
 import ContactUs from './components/ContactUs'
 import Footer from './components/Footer'
@@ -25,6 +26,7 @@ function App() {
      <Banner id="home"/>
      <Members id="members"/>
      <ContactUs id="contact"/>
+     <BangerContent />
      <Footer/>
     </>
   )
