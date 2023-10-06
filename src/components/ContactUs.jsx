@@ -31,7 +31,7 @@ export default function ContactUs() {
                 <div className={ContactStyles.inputData}>
                   <textarea className={ContactStyles.textArea} cols="80" rows="8" required></textarea>
                   <br />
-                  <div className={ContactStyles.underline}></div>
+                  <div className={ContactStyles.underline1}></div>
                   <label htmlFor=""> Write your message</label>
                   <br />
                 </div>
