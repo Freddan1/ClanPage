@@ -1,4 +1,5 @@
 import './App.css'
+import BangerContent from './components/BangerContent'
 import Banner from './components/Banner'
 import ContactUs from './components/ContactUs'
 import Footer from './components/Footer'
@@ -12,6 +13,7 @@ function App() {
      <Navbar/>
      <Banner/>
      <Members/>
+     <BangerContent />
      <ContactUs/>
      <Footer/>
     </>
