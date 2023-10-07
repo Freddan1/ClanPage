@@ -1,25 +1,36 @@
-.wrapper{
-    margin: 2rem 4rem;
-    justify-content: center;
-    
+.wrapper {
+  margin: 2rem 4rem;
+  justify-content: center;
 }
-.heading{
+.heading {
   justify-content: center;
   display: flex;
   margin-bottom: 2rem;
   font-size: 60px;
 }
-.videoList{
-    
-    display: grid;
-    grid-template-columns: repeat(12,minmax(0,1fr));
-    gap: 0.5rem;
-    
+.videoList {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 0.5rem;
 }
-.videoBox{
-    min-height: 300px;
-    grid-column : span 4 ;
-    
-    border: 1px solid black;
+.videoBox {
+  min-height: 300px;
+  grid-column: span 4;
 
+  border: 1px solid black;
+  
+}
+.videoContent{
+    position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: hidden 
+}
+.videoPlayer{
+    min-width: 100%; 
+    min-height: 100%; 
+    width: auto;
+  height: auto;
 }
