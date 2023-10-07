@@ -11,26 +11,29 @@
 .videoList {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
-  gap: 0.5rem;
+  gap: 1rem;
 }
 .videoBox {
-  min-height: 300px;
   grid-column: span 4;
-
-  border: 1px solid black;
+  padding: 20px;
+  /* border: 1px solid black; */
+  border-radius: 7px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.901);
+  position: relative ;
+    color: #e8c01e;
+}
+.videoContent {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
   
 }
-.videoContent{
-    position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%; 
-  overflow: hidden 
-}
-.videoPlayer{
-    min-width: 100%; 
-    min-height: 100%; 
-    width: auto;
-  height: auto;
+
+
+.videoPlayer {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: fill;
 }

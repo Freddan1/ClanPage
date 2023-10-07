@@ -10,23 +10,84 @@ function BangerContent() {
       </div>
       <div className={BangerContentStyles.videoList}>
         <div className={BangerContentStyles.videoBox}>
-          Box1
           <div className={BangerContent.videoContent}>
-            <p>1v2 from ...</p>
+            <h3>xDfrom ...</h3>
             <div className={BangerContent.videoPlayer}>
-            <ReactPlayer
-              url="<https://www.youtube.com/watch?v=7sDY4m8KNLc>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=gVBOEK-nn1U
               "
-              width="560" height="515"
-            />
+                width="100%"
+                height="350px"
+              />
             </div>
           </div>
         </div>
-        <div className={BangerContentStyles.videoBox}>Box2</div>
-        <div className={BangerContentStyles.videoBox}>Box3</div>
-        <div className={BangerContentStyles.videoBox}>Box4</div>
-        <div className={BangerContentStyles.videoBox}>Box5</div>
-        <div className={BangerContentStyles.videoBox}>Box6</div>
+        <div className={BangerContentStyles.videoBox}>
+          <div className={BangerContent.videoContent}>
+            <h3>xD ...</h3>
+            <div className={BangerContent.videoPlayer}>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=koOXKjkdQUw
+              "
+                width="100%"
+                height="350px"
+              />
+            </div>
+          </div>
+        </div>
+        <div className={BangerContentStyles.videoBox}>
+          <div className={BangerContent.videoContent}>
+            <h3>xD ...</h3>
+            <div className={BangerContent.videoPlayer}>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=lP17j99V8_c
+              "
+                width="100%"
+                height="350px"
+              />
+            </div>
+          </div>
+        </div>
+        <div className={BangerContentStyles.videoBox}>
+          <div className={BangerContent.videoContent}>
+            <h3>xD ...</h3>
+            <div className={BangerContent.videoPlayer}>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=WEIM1lb-0WY
+              "
+                width="100%"
+                height="350px"
+              />
+            </div>
+          </div>
+        </div>
+        <div className={BangerContentStyles.videoBox}>
+          <div className={BangerContent.videoContent}>
+            <h3>xD ...</h3>
+            <div className={BangerContent.videoPlayer}>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=gVBOEK-nn1U
+              "
+                width="100%"
+                height="300px"
+              />
+            </div>
+          </div>
+        </div>
+        <div className={BangerContentStyles.videoBox}>
+          <div className={BangerContent.videoContent}>
+            <h3>xD ...</h3>
+            <div className={BangerContent.videoPlayer}>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=gVBOEK-nn1U
+              "
+                width="100%"
+                height="350px"
+              />
+            </div>
+          </div>
+        </div>
+        
       </div>
     </div>
   );
