@@ -24,8 +24,8 @@ function App() {
      <Navbar handleScroll={handleScroll}/>
      <Banner id="home"/>
      <Members id="members"/>
-     <ContactUs id="contact"/>
      <BangerContent id="bangerContent"/>
+     <ContactUs id="contact"/>
      <Footer/>
     </>
   )
