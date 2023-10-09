@@ -5,6 +5,7 @@ import TerroristImage from "../assets/terrorist.jpg";
 export default function Members({id}) {
   return (
     <>
+    <div className={membersStyle.wrapper}>
       <div className={membersStyle.title} id={id}>Members</div>
       <div className={membersStyle.container}>
         <div className={membersStyle.box1}>
@@ -115,6 +116,7 @@ export default function Members({id}) {
           </div>
         </div>
       </div>
+     </div>
     </>
   );
 }

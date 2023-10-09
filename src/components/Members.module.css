@@ -1,15 +1,24 @@
+.wrapper{
+    background-color: rgba(0, 0, 0, 0.967);
+    display: flex;
+    align-items: center;
+
+}
 
 .title{
+    color: #e8c01e;
     display: flex;
-    justify-content: center;
-    margin: 50px 50PX;
+    /* justify-content: center; */
+    /* margin: 50px 50PX; */
+    
+    margin-left: 5rem;
     width: 100%;
     font-size: 50px;
 }
 
 .container{
     display: flex;
-    
+   
     height: 40rem;
     padding: 20px;
     gap: 10px;
@@ -37,8 +46,7 @@
 }
 
 .pic{
-    width: 100%;
-    height: 30%;
+    object-fit: fill;
     margin-bottom: 2rem;
 }
 
@@ -55,7 +63,7 @@
     margin-left: 1rem;
 }
 .pTag{
-    font-size: medium;
+    font-size: 1rem;
     line-height: 1.2rem;
     color: white;
     text-align: left;
