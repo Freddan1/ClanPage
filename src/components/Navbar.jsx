@@ -34,6 +34,7 @@ export default function Navbar({handleScroll}) {
             Banger Content
           </a>
         </li>
+        
       </ul>
     </>
   );

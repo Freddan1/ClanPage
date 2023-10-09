@@ -34,10 +34,14 @@ li a:hover{
     box-shadow: inset 200px 0 0 0 #e6a42adc;
     color: white;     
 }
+.signIn{
+    font-size: 1rem;
+    margin-left: 20rem;
+}
 
 .img{
     border-radius: 50px;
     width: 80px;
-    max-height: 150px;
+    max-height: 80px;
     
     ;}

@@ -14,6 +14,7 @@ export default function Members({id}) {
             </div>
             <div className={membersStyle.profileTitle}>
               Cageman
+             </div> 
               <div className={membersStyle.textContent}>
                 <p className={membersStyle.pTag}>
                   Cageman assumes the role of in-game leader, serving as the
@@ -26,7 +27,7 @@ export default function Members({id}) {
                   environment.
                 </p>
               </div>
-            </div>
+            
           </div>
         </div>
         <div className={membersStyle.box1}>
@@ -36,6 +37,7 @@ export default function Members({id}) {
             </div>
             <div className={membersStyle.profileTitle}>
               Freddan
+            </div>  
               <div className={membersStyle.textContent}>
                 <p className={membersStyle.pTag}>
                   Freddan, the game-changer, brings a unique and dynamic
@@ -47,7 +49,7 @@ export default function Members({id}) {
                   for seizing critical moments.
                 </p>
               </div>
-            </div>
+            
           </div>
         </div>
         <div className={membersStyle.box1}>
@@ -57,6 +59,7 @@ export default function Members({id}) {
             </div>
             <div className={membersStyle.profileTitle}>
               Applet
+             </div> 
               <div className={membersStyle.textContent}>
                 <p className={membersStyle.pTag}>
                   Äpplet, the team's resident clown, adds a delightful and
@@ -67,7 +70,7 @@ export default function Members({id}) {
                   leave teammates and opponents alike scratching their heads.
                 </p>
               </div>
-            </div>
+            
           </div>
         </div>
         <div className={membersStyle.box1}>
@@ -77,6 +80,7 @@ export default function Members({id}) {
             </div>
             <div className={membersStyle.profileTitle}>
               Af
+            </div>  
               <div className={membersStyle.textContent}>
                 <p className={membersStyle.pTag}>
                   In the fast-paced world of competitive gaming, AF's
@@ -87,7 +91,7 @@ export default function Members({id}) {
                   plays.
                 </p>
               </div>
-            </div>
+            
           </div>
         </div>
         <div className={membersStyle.box1}>
@@ -97,6 +101,7 @@ export default function Members({id}) {
             </div>
             <div className={membersStyle.profileTitle}>
               Unknown
+             </div>  
               <div className={membersStyle.textContent}>
                 <p className={membersStyle.pTag}>
                   Attention, gamers and enthusiasts! Our team is on the lookout
@@ -106,7 +111,7 @@ export default function Members({id}) {
                   the significance of concentration, precision, and dedication.
                 </p>
               </div>
-            </div>
+           
           </div>
         </div>
       </div>

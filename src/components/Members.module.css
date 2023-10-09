@@ -1,19 +1,21 @@
+
 .title{
     display: flex;
     justify-content: center;
     margin: 50px 50PX;
     width: 100%;
-    font-size: 60px;
+    font-size: 50px;
 }
 
 .container{
     display: flex;
-    width: 100%;
+    
     height: 40rem;
     padding: 20px;
     gap: 10px;
     justify-content: center;
     align-items: center;
+    margin: 2rem 4rem;
 }
 
 .box1{
@@ -23,8 +25,8 @@
     justify-content: center;
     
     /* text-align: center; */
-    background-color: rgb(47, 47, 47);
-    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.901);
+    border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.60) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
@@ -44,12 +46,13 @@
     width: 100%;
     height: 100%;
     border-radius: 10px;
+    
 }
 
 .profileTitle{
-    color: #e6a42adc;
+    color: #e8c01e;
     font-size: large;
-    text-align: center;
+    margin-left: 1rem;
 }
 .pTag{
     font-size: medium;
