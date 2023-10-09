@@ -39,12 +39,12 @@ function BangerContent() {
           <div className={BangerContent.videoContent}>
             <h3>xD ...</h3>
             <div className={BangerContent.videoPlayer}>
-              <ReactPlayer
+              {/* <ReactPlayer
                 url="https://www.youtube.com/watch?v=gVBOEK-nn1U
               "
                 width="100%"
                 height="350px"
-              />
+              /> */}
             </div>
           </div>
         </div>
@@ -52,12 +52,12 @@ function BangerContent() {
           <div className={BangerContent.videoContent}>
             <h3>xD ...</h3>
             <div className={BangerContent.videoPlayer}>
-              <ReactPlayer
+              {/* <ReactPlayer
                 url="https://www.youtube.com/watch?v=gVBOEK-nn1U
               "
                 width="100%"
                 height="350px"
-              />
+              /> */}
             </div>
           </div>
         </div>
@@ -65,12 +65,12 @@ function BangerContent() {
           <div className={BangerContent.videoContent}>
             <h3>xD ...</h3>
             <div className={BangerContent.videoPlayer}>
-              <ReactPlayer
+              {/* <ReactPlayer
                 url="https://www.youtube.com/watch?v=gVBOEK-nn1U
               "
                 width="100%"
                 height="350px"
-              />
+              /> */}
             </div>
           </div>
         </div>
@@ -78,12 +78,12 @@ function BangerContent() {
           <div className={BangerContent.videoContent}>
             <h3>xD ...</h3>
             <div className={BangerContent.videoPlayer}>
-              <ReactPlayer
+              {/* <ReactPlayer
                 url="https://www.youtube.com/watch?v=gVBOEK-nn1U
               "
                 width="100%"
                 height="350px"
-              />
+              /> */}
             </div>
           </div>
         </div>

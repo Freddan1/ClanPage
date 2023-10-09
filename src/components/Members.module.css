@@ -42,13 +42,16 @@
     background-color: #2a292e;
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.60) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    max-height: 250px;
 }
 
 .content{
     width: 100%;
     display: flex;
     flex-direction: column;
-   
+    justify-content: center;
+    text-align: center;
+    
     
 }
 .nickName{
@@ -58,8 +61,21 @@
 }
 .bodyText{
     margin-top: 0.5rem;
-    font-size: x-small;
+    /* font-size: x-small; */
     /* margin-left: 1.8rem; */
+    /* margin-top: 2rem; */
+}
+.name{
+    color: #e6a42adc;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+.age{
+    margin-top: 2rem;
+    color: rgb(83, 83, 83);
+    font-weight: bold;
+    font-size: 0.7rem;
+    
 }
 .pic{
     object-fit: fill;
@@ -76,7 +92,7 @@
 .profileTitle{
     color: #e8c01e;
     font-size: large;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
 }
 .pTag{
     font-size: 1rem;
@@ -86,7 +102,6 @@
 }
 .textContent{
     margin: 5%;
-    
     display: flex;
     justify-content: center;
 }
