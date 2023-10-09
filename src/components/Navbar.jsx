@@ -25,13 +25,13 @@ export default function Navbar({handleScroll}) {
           </a>
         </li>
         <li className={navBarStyles.li}>
-        <a href="#" onClick={(event) => handleClick("contact", event)}>
-            Contact
+        <a href="#" onClick={(event) => handleClick("bangerContent", event)}>
+            Banger Content
           </a>
         </li>
         <li className={navBarStyles.li}>
-        <a href="#" onClick={(event) => handleClick("bangerContent", event)}>
-            Banger Content
+        <a href="#" onClick={(event) => handleClick("contact", event)}>
+            Contact
           </a>
         </li>
         
