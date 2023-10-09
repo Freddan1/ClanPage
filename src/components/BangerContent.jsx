@@ -1,6 +1,6 @@
 import React from "react";
 import BangerContentStyles from "./BangerContent.module.css";
-// import ReactPlayer from "react-player";
+import ReactPlayer from "react-player";
 function BangerContent() {
   return (
     <div className={BangerContentStyles.wrapper} id="bangerContent">
@@ -13,12 +13,12 @@ function BangerContent() {
           <div className={BangerContent.videoContent}>
             <h3>1v2 from ...</h3>
             <div className={BangerContent.videoPlayer}>
-              {/* <ReactPlayer
+              <ReactPlayer
                 url="https://www.youtube.com/watch?v=gVBOEK-nn1U
               "
                 width="100%"
                 height="350px"
-              /> */}
+              />
             </div>
           </div>
         </div>
@@ -26,12 +26,12 @@ function BangerContent() {
           <div className={BangerContent.videoContent}>
             <h3>xD ...</h3>
             <div className={BangerContent.videoPlayer}>
-              {/* <ReactPlayer
+              <ReactPlayer
                 url="https://www.youtube.com/watch?v=gVBOEK-nn1U
               "
                 width="100%"
                 height="350px"
-              /> */}
+              />
             </div>
           </div>
         </div>
@@ -39,12 +39,12 @@ function BangerContent() {
           <div className={BangerContent.videoContent}>
             <h3>xD ...</h3>
             <div className={BangerContent.videoPlayer}>
-              {/* <ReactPlayer
+              <ReactPlayer
                 url="https://www.youtube.com/watch?v=gVBOEK-nn1U
               "
                 width="100%"
                 height="350px"
-              /> */}
+              />
             </div>
           </div>
         </div>
@@ -52,12 +52,12 @@ function BangerContent() {
           <div className={BangerContent.videoContent}>
             <h3>xD ...</h3>
             <div className={BangerContent.videoPlayer}>
-              {/* <ReactPlayer
+              <ReactPlayer
                 url="https://www.youtube.com/watch?v=gVBOEK-nn1U
               "
                 width="100%"
                 height="350px"
-              /> */}
+              />
             </div>
           </div>
         </div>
@@ -65,12 +65,12 @@ function BangerContent() {
           <div className={BangerContent.videoContent}>
             <h3>xD ...</h3>
             <div className={BangerContent.videoPlayer}>
-              {/* <ReactPlayer
+              <ReactPlayer
                 url="https://www.youtube.com/watch?v=gVBOEK-nn1U
               "
                 width="100%"
                 height="350px"
-              /> */}
+              />
             </div>
           </div>
         </div>
@@ -78,12 +78,12 @@ function BangerContent() {
           <div className={BangerContent.videoContent}>
             <h3>xD ...</h3>
             <div className={BangerContent.videoPlayer}>
-              {/* <ReactPlayer
+              <ReactPlayer
                 url="https://www.youtube.com/watch?v=gVBOEK-nn1U
               "
                 width="100%"
                 height="350px"
-              /> */}
+              />
             </div>
           </div>
         </div>
