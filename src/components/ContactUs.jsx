@@ -2,13 +2,25 @@ import React from 'react'
 import ContactStyles from './ContactUs.module.css'
 import SubmitButton from './SubmitButton'
 import emailjs from '@emailjs/browser'
+import { useState } from 'react';
+
 
 export default function ContactUs({id}) {
+  const [isPopupVisible, setPopupVisible] = useState(false)
+  const togglePopup = () => {
+    setPopupVisible(!isPopupVisible);
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs.sendForm('service_774arth', 'template_a9f24d6', e.target, '4nUCQ-TwvO8xnooo_' )
+    .then(() => {
+      togglePopup();
+    })
+    .catch((error) => {
+      console.log("Couldn't send email:", error)
+    })
   }
 
   return (
@@ -17,6 +29,14 @@ export default function ContactUs({id}) {
       <div className={ContactStyles.formContainer} >
         <div className={ContactStyles.text}>Contact us for tryout</div>
             <form action="#" onSubmit={sendEmail}>
+              {isPopupVisible && (
+              <div className={ContactStyles.popup}>
+                  <div className={ContactStyles.popupContent}>
+                    <p>Email sent successfully! Thank you for contacting us.</p>
+                    <button onClick={togglePopup}>Close</button>
+                  </div>
+              </div>
+              )}
               <div className={ContactStyles.formRow}>
                 <div className={ContactStyles.inputData}>
                   <input type="text" name='first_name' required/>
