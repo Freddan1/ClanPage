@@ -10,6 +10,7 @@ export default function Navbar({handleScroll}) {
   
   return (
     <>
+    <div className={navBarStyles.navWrapper}>
       <ul className={navBarStyles.ul}>
         
           <img src={logo} alt="Logo" className={navBarStyles.img} />
@@ -36,6 +37,7 @@ export default function Navbar({handleScroll}) {
         </li>
         
       </ul>
+      </div>
     </>
   );
 }

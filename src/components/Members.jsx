@@ -1,22 +1,39 @@
 import React from "react";
 import membersStyle from "./Members.module.css";
 import TerroristImage from "../assets/terrorist.jpg";
+import cs from "../assets/cs.webp";
 
-export default function Members({id}) {
+export default function Members({ id }) {
   return (
     <>
-    <div className={membersStyle.wrapper}>
-      <div className={membersStyle.title} id={id}>Members</div>
-      <div className={membersStyle.container}>
-        <div className={membersStyle.box1}>
-          <div className={membersStyle.content}>
-            <div className={membersStyle.pic}>
-              <img src={TerroristImage} alt="pic" />
-            </div>
-            <div className={membersStyle.profileTitle}>
-              Cageman
-             </div> 
-              <div className={membersStyle.textContent}>
+      <div className={membersStyle.wrapper}>
+        <div className={membersStyle.title} id={id}>
+          Members
+        </div>
+        <div className={membersStyle.container}>
+          <div className={membersStyle.box1}>
+            <div className={membersStyle.content}>
+              <div className={membersStyle.pic}>
+                <img src={TerroristImage} alt="pic" />
+              </div>
+              <div className={membersStyle.profileTitle}>
+                <img
+                  className={membersStyle.swedenImg}
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARwAAACxCAMAAAAh3/JWAAAAS1BMVEUAaqb/zAH/zwCwpmMAZasAZa2vp2X/0AAAZ6sAaqhzi3bewhnZwiBzjXMAZLEAYK5rioGpo2zwxhO/tEKwo2qypGeqpWbCszgAYbRksuCVAAAB0UlEQVR4nO3aSW7CUBRFQUMghDRA+ux/pWEFhQf+AiWnPLX05CMP7zSNsN88rS7aPT4MOX7rigPFgeJAcaA4UBwoDhQHigPFgeJAcaA4UBwoDhQHigPFgeJAcaA4UBwoDhQHigPFgeJAcaA4UBwoDhQHigPFgeJAcaA4UBwoDhQHigPFgeJAcaA4UBwoDhQHigPFgeJAcaA4UBwoDhQHigPFgeJAcaA4UBwoDhQHigPFgeLAfvs8I87LzcfZjnA4zvlzTochx5cz3Q3x+nY5zvr9Y8zxxUzrMS63Ode5ddOcr/ivigPFgeJAcaA4UBwoDhQHigPFgeJAcaA4UBwoDhQHigPFgeJAcaA4UBwoDhQHigPFgeJAcaA4UBwoDlxzvHTz86Uxf87u/FwuM+elq5ruR/j8mrEJXH0Pub2gaTPC4Thnanv6GXJ8OWP2u420oThQHCgOFAeKA8WB4kBxoDhQHCgOFAeKA8WB4kBxoDhQHCgOFAeKA8WB4kBxoDhQHCgOFAeKA8WB4kBxoDhQHCgOFAeKA8WB4kBxoDhQHCgOFAeKA8WB4kBxoDhQHCgOFAeKA8WB4kBxoDhQHCgOFAeKA8WB4kBxoDhQHCgO/JE4v2X+aJgZm+DQAAAAAElFTkSuQmCC"
+                  width={18}
+                  height={14}
+                  alt=""
+                />
+                <span className={membersStyle.nickName}>Cageman</span>
+                <div className={membersStyle.bodyText}>
+                <p>Tobias Burman</p>
+                
+                <p>24 years</p>
+                </div>
+              </div>
+              
+                
+              {/* <div className={membersStyle.textContent}>
                 <p className={membersStyle.pTag}>
                   Cageman assumes the role of in-game leader, serving as the
                   strategic architect and guiding force for the team's success.
@@ -27,19 +44,16 @@ export default function Members({id}) {
                   communication, fostering a collaborative and efficient team
                   environment.
                 </p>
-              </div>
-            
-          </div>
-        </div>
-        <div className={membersStyle.box1}>
-          <div className={membersStyle.content}>
-            <div className={membersStyle.pic}>
-              <img src={TerroristImage} alt="pic" />
+              </div> */}
             </div>
-            <div className={membersStyle.profileTitle}>
-              Freddan
-            </div>  
-              <div className={membersStyle.textContent}>
+          </div>
+          <div className={membersStyle.box1}>
+            <div className={membersStyle.content}>
+              <div className={membersStyle.pic}>
+                <img src={TerroristImage} alt="pic" />
+              </div>
+              <div className={membersStyle.profileTitle}>Freddan</div>
+              {/* <div className={membersStyle.textContent}>
                 <p className={membersStyle.pTag}>
                   Freddan, the game-changer, brings a unique and dynamic
                   presence to the team. With an unparalleled ability to shift
@@ -49,19 +63,16 @@ export default function Members({id}) {
                   unexpected strategies, unconventional plays, and an instinct
                   for seizing critical moments.
                 </p>
-              </div>
-            
-          </div>
-        </div>
-        <div className={membersStyle.box1}>
-          <div className={membersStyle.content}>
-            <div className={membersStyle.pic}>
-              <img src={TerroristImage} alt="pic" />
+              </div> */}
             </div>
-            <div className={membersStyle.profileTitle}>
-              Applet
-             </div> 
-              <div className={membersStyle.textContent}>
+          </div>
+          <div className={membersStyle.box1}>
+            <div className={membersStyle.content}>
+              <div className={membersStyle.pic}>
+                <img src={TerroristImage} alt="pic" />
+              </div>
+              <div className={membersStyle.profileTitle}>Applet</div>
+              {/* <div className={membersStyle.textContent}>
                 <p className={membersStyle.pTag}>
                   Äpplet, the team's resident clown, adds a delightful and
                   unconventional touch to the group dynamics. Known for making
@@ -70,19 +81,16 @@ export default function Members({id}) {
                   element of humor and a willingness to take risks that often
                   leave teammates and opponents alike scratching their heads.
                 </p>
-              </div>
-            
-          </div>
-        </div>
-        <div className={membersStyle.box1}>
-          <div className={membersStyle.content}>
-            <div className={membersStyle.pic}>
-              <img src={TerroristImage} alt="pic" />
+              </div> */}
             </div>
-            <div className={membersStyle.profileTitle}>
-              Af
-            </div>  
-              <div className={membersStyle.textContent}>
+          </div>
+          <div className={membersStyle.box1}>
+            <div className={membersStyle.content}>
+              <div className={membersStyle.pic}>
+                <img src={TerroristImage} alt="pic" />
+              </div>
+              <div className={membersStyle.profileTitle}>Af</div>
+              {/* <div className={membersStyle.textContent}>
                 <p className={membersStyle.pTag}>
                   In the fast-paced world of competitive gaming, AF's
                   fearlessness stands out. Whether pushing through choke points,
@@ -91,19 +99,16 @@ export default function Members({id}) {
                   is pivotal in setting the tone for the team's aggressive
                   plays.
                 </p>
-              </div>
-            
-          </div>
-        </div>
-        <div className={membersStyle.box1}>
-          <div className={membersStyle.content}>
-            <div className={membersStyle.pic}>
-              <img src={TerroristImage} alt="pic" />
+              </div> */}
             </div>
-            <div className={membersStyle.profileTitle}>
-              Unknown
-             </div>  
-              <div className={membersStyle.textContent}>
+          </div>
+          <div className={membersStyle.box1}>
+            <div className={membersStyle.content}>
+              <div className={membersStyle.pic}>
+                <img src={TerroristImage} alt="pic" />
+              </div>
+              <div className={membersStyle.profileTitle}>Unknown</div>
+              {/* <div className={membersStyle.textContent}>
                 <p className={membersStyle.pTag}>
                   Attention, gamers and enthusiasts! Our team is on the lookout
                   for a new member to join our ranks, and we're seeking an
@@ -111,12 +116,11 @@ export default function Members({id}) {
                   As we navigate the competitive gaming landscape, we recognize
                   the significance of concentration, precision, and dedication.
                 </p>
-              </div>
-           
+              </div> */}
+            </div>
           </div>
         </div>
       </div>
-     </div>
     </>
   );
 }

@@ -1,19 +1,23 @@
 
+.navWrapper{
+    display: flex;
+}
 .ul{
-    position: fixed;
+    
+    /* position: fixed; */
     top: 0 ;
     display: flex;
     list-style-type: none;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     padding: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     font-size: 20px;
     height: 80px;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
     /* margin-right: 5rem; */
-    background-color: white;
+    background-color: #1e1d23;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -21,7 +25,7 @@
 
 li a {
     display: block;
-    color: rgba(0, 0, 0, 0.557);
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -41,7 +45,7 @@ li a:hover{
 
 .img{
     border-radius: 50px;
-    width: 80px;
+    width: 70px;
     max-height: 80px;
     
     ;}
