@@ -7,10 +7,19 @@ export default function Members({ id }) {
   return (
     <>
       <div className={membersStyle.wrapper}>
-      
-        <div className={membersStyle.title} id={id}>
+        <h3 className={membersStyle.title} id={id}>
           Members
+        </h3>
+
+        <div className={membersStyle.memberDescription}>
+          <p>
+            SlanCS is one of the most renowned esports brands in the world. We compete
+            at the highest level in Counter-Strike: Global Offensive with a
+            Swedish based roster. Join us as we participate in tournaments
+            around the world.
+          </p>
         </div>
+
         <div className={membersStyle.container}>
           <div className={membersStyle.box1}>
             <div className={membersStyle.content}>
@@ -27,12 +36,11 @@ export default function Members({ id }) {
                 />
                 <span className={membersStyle.nickName}>Cageman</span>
                 <div className={membersStyle.bodyText}>
-                <p className={membersStyle.name}>Tobias Burman</p>
-                
-                <p className={membersStyle.age}></p>
+                  <p className={membersStyle.name}>Tobias Burman</p>
+
+                  <p className={membersStyle.age}></p>
                 </div>
               </div>
-            
             </div>
           </div>
           <div className={membersStyle.box1}>
@@ -50,12 +58,11 @@ export default function Members({ id }) {
                 />
                 <span className={membersStyle.nickName}>Freddan</span>
                 <div className={membersStyle.bodyText}>
-                <p className={membersStyle.name}>Fredrik Eriksson</p>
-                
-                <p className={membersStyle.age}></p>
+                  <p className={membersStyle.name}>Fredrik Eriksson</p>
+
+                  <p className={membersStyle.age}></p>
                 </div>
               </div>
-            
             </div>
           </div>
           <div className={membersStyle.box1}>
@@ -73,12 +80,11 @@ export default function Members({ id }) {
                 />
                 <span className={membersStyle.nickName}>Applet</span>
                 <div className={membersStyle.bodyText}>
-                <p className={membersStyle.name}>Rambod Beigi</p>
-                
-                <p className={membersStyle.age}></p>
+                  <p className={membersStyle.name}>Rambod Beigi</p>
+
+                  <p className={membersStyle.age}></p>
                 </div>
               </div>
-            
             </div>
           </div>
           <div className={membersStyle.box1}>
@@ -96,14 +102,14 @@ export default function Members({ id }) {
                 />
                 <span className={membersStyle.nickName}>Af</span>
                 <div className={membersStyle.bodyText}>
-                <p className={membersStyle.name}>Afshin Bagheri</p>
-                
-                <p className={membersStyle.age}></p>
+                  <p className={membersStyle.name}>Afshin Bagheri</p>
+
+                  <p className={membersStyle.age}></p>
                 </div>
               </div>
-            
             </div>
           </div>
+          
           <div className={membersStyle.box1}>
             <div className={membersStyle.content}>
               <div className={membersStyle.pic}>
@@ -119,17 +125,17 @@ export default function Members({ id }) {
                 />
                 <span className={membersStyle.nickName}>Unknown</span>
                 <div className={membersStyle.bodyText}>
-                <p className={membersStyle.name}>Unknown</p>
-                
-                <p className={membersStyle.age}></p>
+                  <p className={membersStyle.name}>Unknown</p>
+
+                  <p className={membersStyle.age}></p>
                 </div>
               </div>
-            
             </div>
           </div>
+          <hr/>
+        
         </div>
-        </div>
-     
+      </div>
     </>
   );
 }
