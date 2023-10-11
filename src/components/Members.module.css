@@ -1,6 +1,10 @@
-.wrapper{
-    background-color: rgba(0, 0, 0, 0.967);
-
+.wrapper {
+    /* background-color: rgba(0, 0, 0, 0.967); */
+    
+    background-image: url("../assets/cs.webp");
+    background-repeat: no-repeat;
+    background-size: contain
+  
 }
 .img{
     background-image: ;
@@ -22,7 +26,7 @@
 
 .container{
     display: flex;
-   background-image: url("../assets/cs.webp");
+    
     height: 40rem;
     padding: 20px;
     gap: 10px;
