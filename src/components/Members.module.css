@@ -26,7 +26,7 @@
 }
 
 .memberDescription {
-  margin-top: 4rem;
+  margin-top: 3rem;
   font-size: 18px;
   color: white;
   
@@ -39,16 +39,27 @@
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   max-height: 250px;
 }
+.outerBox{
+  background-color:  #1a191e16;
+  padding: 10px;
+  margin: 4rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  border-radius: 8px;
+}
 
 .container {
   display: flex;
   /* flex-flow: wrap; */
+  background-color: #20231d06;
+  border-radius: 1px solid green;
   height: 30rem;
   padding: 20px;
   gap: 10px;
   justify-content: center;
   align-items: center;
   /* margin: 0 2rem 0 2rem; */
+  
 }
 
 .box1 {

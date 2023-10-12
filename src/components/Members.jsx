@@ -14,6 +14,7 @@ export default function Members({ id }) {
           Members
         </h3>
 
+      <div className={membersStyle.outerBox}>
         <div className={membersStyle.memberDescription}>
           <p>
             SlanCS is one of the most renowned esports brands in the world. We compete
@@ -22,7 +23,7 @@ export default function Members({ id }) {
             around the world.
           </p>
         </div>
-
+        
         <div className={membersStyle.container}>
           <div className={membersStyle.box1}>
             <div className={membersStyle.content}>
@@ -138,6 +139,7 @@ export default function Members({ id }) {
           </div>
           <hr/>
         
+        </div>
         </div>
       </div>
     </>
