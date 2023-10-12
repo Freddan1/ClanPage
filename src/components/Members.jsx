@@ -2,6 +2,9 @@ import React from "react";
 import membersStyle from "./Members.module.css";
 import TerroristImage from "../assets/terrorist.jpg";
 import cs from "../assets/cs.webp";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSteam } from "@fortawesome/free-brands-svg-icons"; 
+
 
 export default function Members({ id }) {
   return (
@@ -37,6 +40,7 @@ export default function Members({ id }) {
                 <span className={membersStyle.nickName}>Cageman</span>
                 <div className={membersStyle.bodyText}>
                   <p className={membersStyle.name}>Tobias Burman</p>
+                  <FontAwesomeIcon icon={faSteam} className={membersStyle.steamLogo} />
 
                   <p className={membersStyle.age}></p>
                 </div>
@@ -59,7 +63,7 @@ export default function Members({ id }) {
                 <span className={membersStyle.nickName}>Freddan</span>
                 <div className={membersStyle.bodyText}>
                   <p className={membersStyle.name}>Fredrik Eriksson</p>
-
+                  <FontAwesomeIcon icon={faSteam} className={membersStyle.steamLogo} />
                   <p className={membersStyle.age}></p>
                 </div>
               </div>
@@ -81,7 +85,7 @@ export default function Members({ id }) {
                 <span className={membersStyle.nickName}>Applet</span>
                 <div className={membersStyle.bodyText}>
                   <p className={membersStyle.name}>Rambod Beigi</p>
-
+                  <FontAwesomeIcon icon={faSteam} className={membersStyle.steamLogo} />
                   <p className={membersStyle.age}></p>
                 </div>
               </div>
@@ -103,7 +107,7 @@ export default function Members({ id }) {
                 <span className={membersStyle.nickName}>Af</span>
                 <div className={membersStyle.bodyText}>
                   <p className={membersStyle.name}>Afshin Bagheri</p>
-
+                  <FontAwesomeIcon icon={faSteam} className={membersStyle.steamLogo} />
                   <p className={membersStyle.age}></p>
                 </div>
               </div>
@@ -126,7 +130,7 @@ export default function Members({ id }) {
                 <span className={membersStyle.nickName}>Unknown</span>
                 <div className={membersStyle.bodyText}>
                   <p className={membersStyle.name}>Unknown</p>
-
+                <FontAwesomeIcon icon={faSteam} className={membersStyle.steamLogo} />
                   <p className={membersStyle.age}></p>
                 </div>
               </div>

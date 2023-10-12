@@ -83,6 +83,10 @@
   font-weight: bold;
   font-size: 0.8rem;
 }
+.steamLogo{
+  margin-top: 10px;
+  font-size:  35px;
+}
 .age {
   margin-top: 2rem;
   color: rgb(83, 83, 83);
