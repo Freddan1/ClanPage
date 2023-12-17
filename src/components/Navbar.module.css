@@ -3,20 +3,18 @@
     display: flex;
 }
 .ul{
-    
-    /* position: fixed; */
+    position: fixed;
     top: 0 ;
     display: flex;
     list-style-type: none;
-    /* margin-bottom: 10px; */
+    margin-bottom: 10px;
+    margin-right: 0;
     padding: 0;
-    /* overflow: hidden; */
     font-size: 20px;
     height: 80px;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    /* margin-right: 5rem; */
     background-color: #1e1d23;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -48,4 +46,4 @@ li a:hover{
     width: 70px;
     max-height: 80px;
     
-    ;}
+}

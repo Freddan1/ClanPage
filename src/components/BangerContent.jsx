@@ -1,6 +1,8 @@
 import React from "react";
 import BangerContentStyles from "./BangerContent.module.css";
 import ReactPlayer from "react-player";
+import myVideo from '../assets/awpKills.mp4'
+
 function BangerContent() {
   return (
     <div className={BangerContentStyles.wrapper} id="bangerContent">
@@ -24,8 +26,8 @@ function BangerContent() {
 
             <div className={BangerContent.videoPlayer}>
               <ReactPlayer
-                url="https://www.youtube.com/watch?v=gVBOEK-nn1U
-              "
+                file={myVideo}
+              
                 width="100%"
                 height="200px"
               />
