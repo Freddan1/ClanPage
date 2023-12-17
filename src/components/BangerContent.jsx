@@ -10,6 +10,7 @@ function BangerContent() {
         Banger Content
         <br />
       </h3>
+      <div className={BangerContentStyles.outerBox}>
 
       <div className={BangerContentStyles.description}>
         <p>
@@ -60,6 +61,7 @@ function BangerContent() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );
