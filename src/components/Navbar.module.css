@@ -1,10 +1,12 @@
 
-.navWrapper{
+
+.navWrapper {
     display: flex;
-}
-.ul{
+  }
+  
+  .ul {
     position: fixed;
-    top: 0 ;
+    top: 0;
     display: flex;
     list-style-type: none;
     margin-bottom: 10px;
@@ -12,38 +14,101 @@
     padding: 0;
     font-size: 20px;
     height: 80px;
-    justify-content: space-evenly;
+    justify-content: space-between; 
     align-items: center;
     width: 100%;
     background-color: #1e1d23;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-
-li a {
+  }
+  
+  li {
+    margin: 0;
+  }
+  
+  li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    transition: color .5s ease-in-out, box-shadow .3s ease-in-out;
+    transition: color 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
     border-radius: 5px;
-}
-
-li a:hover{
-    /* background-color: #e6a42adc; */
+  }
+  
+  li a:hover {
     box-shadow: inset 200px 0 0 0 #e6a42adc;
-    color: white;     
-}
-.signIn{
-    font-size: 1rem;
-    margin-left: 20rem;
-}
-
-.img{
+    color: white;
+  }
+  
+  .img {
     border-radius: 50px;
     width: 70px;
     max-height: 80px;
-    
-}
+  }
+  
+  .toggleWrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .toggleMenu {
+    display: none;
+  }
+  
+  .hamburgerMenu {
+    display: flex;
+    flex-direction: column;
+    background-color: #1e1d23;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 999;
+  }
+  
+  .hamburgerMenu li {
+    padding: 10px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .ul {
+      padding: 20px;
+      align-items: center;
+    }
+    .li {
+      display: none;
+    }
+  
+    .toggleMenu {
+      display: block;
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: white;
+    }
+  
+    .hamburgerMenu {
+      display: flex;
+      flex-direction: column;
+      background-color: #1e1d23;
+      position: fixed;
+      top: 80px;
+      right: 0;
+      width: 100%;
+      text-align: center;
+      z-index: 999;
+    }
+  
+    .hamburgerMenu li {
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;  
+      padding: 10px;
+    }
+    .hamburgerMenu .li :hover {
+        background-color: transparent; 
+        box-shadow: none;
+      }
+  }  

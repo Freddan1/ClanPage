@@ -11,16 +11,15 @@
 
 .title {
   color: #e8c01e;
-  /* display: flex; */
-  /* justify-content: center; */
-  /* margin: 50px 50PX; */
+  display: flex;
+  justify-content: center;
+  margin: 50px 50PX;
   margin-top: 2rem;
   margin-left: 4rem;
-  /* margin-right: 20rem; */
+  margin-right: 20rem;
   width: 13.5%;
 
   font-size: 40px;
-  border-bottom: 1px solid #e8c01e;
 }
 
 .memberDescription {
@@ -48,9 +47,9 @@
 
 .container {
   display: flex;
-  /* flex-flow: wrap; */
+  flex-wrap: wrap;  
   background-color: #20231d06;
-  border-radius: 1px solid green;
+  border-radius: 4px solid green;
   height: 30rem;
   padding: 20px;
   gap: 10px;
@@ -77,6 +76,14 @@
   justify-content: center;
   text-align: center;
 }
+
+.innerContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .nickName {
   font-weight: bolder;
   color: white;
@@ -110,7 +117,7 @@
 .pic img {
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 4px;
 }
 
 .profileTitle {
@@ -146,5 +153,12 @@
   }
   .container{
     max-height: 40rem;;
+  }
+}
+
+@media (max-width: 984px) {
+  .container{
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 }

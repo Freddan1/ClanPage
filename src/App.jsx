@@ -21,12 +21,14 @@ function App() {
   };
   return (
     <>
+    <div className="wrapper">
      <Navbar handleScroll={handleScroll}/>
      <Banner id="home"/>
      <Members id="members"/>
      <BangerContent id="bangerContent"/>
      <ContactUs id="contact"/>
      <Footer/>
+    </div> 
     </>
   )
 }
