@@ -46,8 +46,7 @@
 }
 
 .container {
-  display: flex;
-  flex-wrap: wrap;  
+  display: flex; 
   background-color: #20231d06;
   border-radius: 4px solid green;
   height: 30rem;
@@ -61,7 +60,8 @@
 
 .box1 {
   display: flex;
-  width: 15%;
+  flex-wrap: wrap;
+  width: 30%;
   background-color: #2a292e;
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.6) 0px 13px 27px -5px,
@@ -75,6 +75,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  min-height: 100%;
 }
 
 .innerContent{
@@ -158,7 +159,56 @@
 
 @media (max-width: 984px) {
   .container{
-    flex-direction: column;
+    display: flex;
     flex-wrap: wrap;
+
   }
+  p {
+    display: none;
+  }
+  .box1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+  }
+  .profileTitle {
+    font-size: small;
+  }
+  .steamLogo{
+    font-size:  25px;
+    margin-bottom: 7px;
+  }
+  .bodyText{
+    min-width: 100%;
+  }
+  .name {
+    font-size: 0.6rem;
+  } 
+}
+
+@media (max-width: 670px){
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-height: 100%;
+  }
+  .box1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 35%;
+  }
+  .profileTitle {
+    font-size: small;
+  }
+  .steamLogo{
+    font-size:  25px;
+    margin-bottom: 7px;
+  }
+  .bodyText{
+    min-width: 100%;
+  }
+  .name {
+    font-size: 0.6rem;
+  } 
 }
