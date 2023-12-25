@@ -4,16 +4,28 @@ import TerroristImage from "../assets/terrorist.jpg";
 import cs from "../assets/cs.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSteam } from "@fortawesome/free-brands-svg-icons"; 
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 
 export default function Members({ id }) {
+
+  const settings = {
+    dots: true,
+    Infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  }
+
   return (
     <>
       <div className={membersStyle.wrapper}>
         <h3 className={membersStyle.title} id={id}>
           Members
         </h3>
-
       <div className={membersStyle.outerBox}>
         <div className={membersStyle.memberDescription}>
           <p>
@@ -23,8 +35,9 @@ export default function Members({ id }) {
             around the world.
           </p>
         </div>
-        
+
         <div className={membersStyle.container}>
+        <Slider {...settings} className={membersStyle.slider}>
           <div className={membersStyle.box1}>
             <div className={membersStyle.content}>
               <div className={membersStyle.pic}>
@@ -48,6 +61,7 @@ export default function Members({ id }) {
               </div>
             </div>
           </div>
+          
           <div className={membersStyle.box1}>
             <div className={membersStyle.content}>
               <div className={membersStyle.pic}>
@@ -70,6 +84,7 @@ export default function Members({ id }) {
               </div>
             </div>
           </div>
+          
           <div className={membersStyle.box1}>
             <div className={membersStyle.content}>
               <div className={membersStyle.pic}>
@@ -137,6 +152,7 @@ export default function Members({ id }) {
               </div>
             </div>
           </div>
+          </Slider>
           <hr/>
         
         </div>

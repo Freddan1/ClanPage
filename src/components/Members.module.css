@@ -6,7 +6,9 @@
 }
 
 .swedenImg {
-  margin-right: 0.2rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .title {
@@ -60,13 +62,18 @@
 
 .box1 {
   display: flex;
-  flex-wrap: wrap;
+  width: 50%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* flex-wrap: wrap;
   width: 30%;
   background-color: #2a292e;
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.6) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  max-height: 250px;
+  max-height: 250px; */
 }
 
 .content {
@@ -111,17 +118,20 @@
   font-size: 0.7rem;
 }
 .pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
   object-fit: fill;
   margin-bottom: 2rem;
 }
 
 .pic img {
-  width: 100%;
-  height: 100%;
-  border-radius: 4px;
+  max-width: 100%;
+  height: auto;
 }
 
 .profileTitle {
+  
   color: #e8c01e;
   font-size: large;
   /* margin-left: 1rem; */
@@ -137,6 +147,18 @@
   display: flex;
   justify-content: center;
 }
+
+.slider {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+
+
 @media (max-width: 1600px) {
   .wrapper {
     background-repeat: no-repeat;
