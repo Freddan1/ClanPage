@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import membersStyle from "./Members.module.css";
 import TerroristImage from "../assets/terrorist.jpg";
 import cs from "../assets/cs.webp";
@@ -7,14 +7,21 @@ import { faSteam } from "@fortawesome/free-brands-svg-icons";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import {motion} from "framer-motion"
 
 
 
 export default function Members({ id }) {
 
+  const [isAnimationComplete, setAnimationComplete] = useState(false)
+
+  const handleAnimationComplete = () => {
+    setAnimationComplete(true)
+  }
+
   const settings = {
     dots: true,
-    Infinite: true,
+    infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -36,6 +43,11 @@ export default function Members({ id }) {
           </p>
         </div>
 
+        <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{opacity: 1}}
+        transition={{ duration: 2 }}
+        >
         <div className={membersStyle.container}>
         <Slider {...settings} className={membersStyle.slider}>
           <div className={membersStyle.box1}>
@@ -156,6 +168,7 @@ export default function Members({ id }) {
           <hr/>
         
         </div>
+        </motion.div>
         </div>
       </div>
     </>
